@@ -29,7 +29,7 @@
           <li><a href="" class="item-menu link">Contact</a></li>
         </ul>
       </nav>
-      <button type="button" class="button-click">Order Now</button>
+      <button type="button" class="button-click" data-modal-open>Order Now</button>
       </div>
     </header>
     <main>
@@ -350,38 +350,68 @@
       </div>
       </div>
 
-      
-      <!-- <div class="image-container">
-        <ul class="image-list">
-          <li class="image-item-list">
-            <img src="./images/orange-left.png" alt="orange-left" width="196" height="107">
-          </li>
-          <li class="image-item-list">
-            <img src="./images/drops-left.png" alt="drops-left" width="178" height="98">
-          </li>
-          <li class="image-item-list">
-            <img src="./images/apple-left.png" alt="apple-left" width="163" height="206">
-          </li>
-          <div class="drops-orange">
-          <li class="image-item-list">
-            <img src="./images/drops-centr.png" alt="drops-centr" class="drops-center" width="526" height="266">
-          </li>
-          <li class="image-item-list">
-            <img src="./images/orange-centr.png" alt="orange-centr" class="orange-center" width="380" height="126">
-          </li>
-          </div>
-          <li class="image-item-list">
-            <img src="./images/banana.png" alt="banana" width="87" height="235">
-          </li>
-          <li class="image-item-list">
-            <img src="./images/drops-rights.png" alt="drops-rights" width="162" height="154">
-          </li>
-          <li class="image-item-list">
-            <img src="./images/apple-rights.png" alt="apple-rights" width="73" height="181">
-          </li>
-        </ul>
-      </div> -->
       </div>
     </footer>
+
+
+
+
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="icon-button" data-modal-close>
+          <svg class="modal-icon" width="24" height="24">
+            <use href="./images/icon.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="call-you-text">
+          Order Form
+        </p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="madal-input"
+                placeholder="Your name"
+              />
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Phone number</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                class="madal-input"
+                placeholder="+38(0_ _) _ _ _   _ _   _ _"
+              />
+              
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">E-mail</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                class="madal-input"
+                placeholder="example@gmail.com"
+              />
+              
+            </div>
+          </div>
+          <button type="submit" class="modal-send">Send</button>
+        </form>
+      </div>
+    </div>
+
+<script src="./js/modal.js"></script>
+
   </body>
 </html>
