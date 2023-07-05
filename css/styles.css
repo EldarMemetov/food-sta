@@ -1,6 +1,5 @@
 body {
-  font-family: "Roboto", Bold, "Regular";
-  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
 }
 
 .link {
@@ -14,28 +13,6 @@ body {
   width: 1280px;
   padding: 0 16px;
   margin: 0 auto;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  padding-bottom: 14px;
-  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
-  background-color: #fefefe;
-}
-
-.item-main-menu {
-  display: flex;
-  gap: 28px;
-  padding: 20px 0;
-}
-
-.logo {
-  margin-right: auto;
-}
-
-.nav {
-  margin-right: 30px;
 }
 
 p,
@@ -55,16 +32,42 @@ ul {
   margin: 0;
   padding-left: 0;
 }
+.header-page {
+  box-shadow: 0px 4px 24px 0px rgba(105, 105, 105, 0.1);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  background-color: #fefefe;
+}
+
+.item-main-menu {
+  display: flex;
+  gap: 28px;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.nav {
+  margin-right: 30px;
+}
 
 .item-menu {
   font-size: 14px;
   line-height: 16px;
   color: #2c2c2c;
+  padding: 28px 0;
+  display: block;
 }
 
 .item-menu:hover,
 .item-menu:focus {
   color: #bbf330;
+  font-weight: 700;
+  text-decoration-line: underline;
 }
 .button-click {
   background-color: #bbf330;
@@ -84,44 +87,40 @@ ul {
 /** --------------section1 --------------- */
 
 .main-section {
-  max-height: 446px;
+  padding: 14px 0;
 }
 .made-img {
-  position: relative;
+  border-radius: 580px;
+  border: 26px solid #ffe550;
+  width: 580px;
+  height: 580px;
 }
 
 .item-info {
-  display: flex;
   background-color: #fefefe;
-  min-height: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .enjoy-food {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 48px;
   line-height: 120%;
   color: #2c2c2c;
-  margin-right: auto;
-  margin-left: 16px;
   margin-bottom: 28px;
-  width: 502.42px;
+  width: 502px;
 }
 .text-info {
   font-size: 16px;
   line-height: 150%;
   color: #2c2c2c;
-  text-align: center;
+  margin-bottom: 40px;
   width: 511px;
-  margin-left: 16px;
-  text-align: left;
 }
 
 .button-one {
   background-color: #bbf330;
-  font-family: "Roboto";
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 13px;
   line-height: 150%;
@@ -129,74 +128,88 @@ ul {
   border-radius: 30px;
   cursor: pointer;
   border: 1px solid #bbf330;
-  width: 98px;
+  min-width: 98px;
   height: 32px;
-  margin-left: 16px;
-  margin-top: 40px;
   display: block;
-}
-.container-text {
-  margin-right: 129px;
-  margin-top: 159px;
-}
-
-.img-yellow {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.img-breakfast {
-  position: absolute;
-  top: 27px;
-  left: 26px;
 }
 
 /** --------------section2 --------------- */
 
-.subscribe-container {
-  position: relative;
-  max-width: 1280px;
-  height: 824px;
-  padding: 0 16px;
-  margin: 0 auto;
+.section-info {
   background-image: url(../images/fonyellow.png);
   background-position: center;
-  background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  bottom: px;
+  padding-top: 177px;
+  padding-bottom: 43px;
+  margin-top: -137px;
+  background-size: 100% 100%;
 }
 
-.content-main {
+.img-subscribe-wrap {
+  width: 550px;
+  height: 550px;
+  border-radius: 550px;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  padding: 24px;
+}
+
+.subscrible-elipse {
+  width: 502px;
+  height: 502px;
+  border-radius: 502px;
+  background: #fefefe;
+  position: relative;
 }
 
 .img-apple {
-  margin-right: auto;
+  position: absolute;
+  margin-top: -574px;
+  margin-left: 58px;
 }
 
-.about-our-list {
+.subscribe-container {
   display: flex;
-  padding: 260px 51px 151px 16px;
+  gap: 90px;
+  align-items: center;
+}
+.content-text {
+  display: flex;
+  gap: 67px;
+  margin-bottom: 13px;
 }
 
+.subscrible-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 48px;
+  background: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
 .info-subscribe {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 42px;
   line-height: 120%;
   color: #2c2c2c;
-  width: 526.17px;
+  width: 526px;
+  margin-bottom: 20px;
 }
 .info-delivery {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 140%;
   color: #2c2c2c;
-  width: 500px;
+  margin-bottom: 40px;
 }
+.info-delivery-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  color: #2c2c2c;
+  margin-bottom: 16px;
+}
+
 .text-delivery {
   font-size: 14px;
   line-height: 150%;
@@ -217,27 +230,21 @@ ul {
   padding: 10px 22px 10px 22px;
 }
 
-.content-main {
-}
-
 /** --------------section3--------------- */
 
 .favorites-menu {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 42px;
   line-height: 49px;
   color: #2c2c2c;
   text-align: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .favorites-text {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   color: #2c2c2c;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .pizza-menu {
@@ -245,15 +252,18 @@ ul {
   flex-wrap: wrap;
   row-gap: 32px;
   justify-content: center;
-  padding-bottom: 100px;
 }
 .gamburger-circle {
-  position: relative;
+  width: 395px;
+  height: 397px;
+  border-radius: 197.5px;
+  border: 16px solid var(--yellow-main, #ffe550);
+  background: var(--white, #fefefe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .gamburger-photo {
-  position: absolute;
-  top: 42px;
-  left: 42px;
 }
 .circle-yellow {
   display: block;
@@ -262,16 +272,23 @@ ul {
   width: calc((100% - 16px) / 3);
 }
 .favorites-container {
-  padding-top: 81px;
   background-color: #fefefe;
+}
+.favorites {
+  padding-top: 81px;
+  padding-bottom: 100px;
 }
 
 /** --------------section4--------------- */
-
+.section-feedback {
+  background-image: url(../images/rectangle.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
 .item-feedback {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
   font-size: 42px;
   line-height: 49px;
   color: #2c2c2c;
@@ -281,25 +298,19 @@ ul {
   font-size: 16px;
   line-height: 19px;
   color: #2c2c2c;
+  margin-bottom: 32px;
 }
 
-.section-feedback {
-  height: 555px;
-  display: flex;
-}
 .container-feedback-main {
-  padding-top: 100px;
 }
 
 .feedback-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   color: #2c2c2c;
   width: 473px;
-  padding-top: 28px;
+  margin-bottom: 40px;
 }
 .feedback-people {
   font-family: "Roboto";
@@ -315,12 +326,10 @@ ul {
   color: #2c2c2c;
 }
 .container-man {
-  border: 2px solid #7eb101;
   width: 501px;
-  height: 227px;
   background-color: #fefefe;
   border-radius: 5%;
-  padding: 14px;
+  padding: 14px 14px 16px;
 }
 
 .header-svg-icon {
@@ -330,7 +339,6 @@ ul {
 .people-men {
   display: flex;
   gap: 16px;
-  padding-top: 40px;
 }
 
 .text-cool {
@@ -341,41 +349,39 @@ ul {
 .item-container-feedback {
   display: flex;
   gap: 139px;
-  padding-top: 32px;
+}
+.icon-star-list {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 28px;
 }
 
 .feedback-item {
-  background-image: url(../images/rectangle.jpg);
-  background-position: center;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 1280px;
-  height: 647px;
-  margin: 0 auto;
 }
 
 /** --------------section5--------------- */
-
+.spesial-section {
+  padding-bottom: 100px;
+  padding-top: 46px;
+}
 .spesial-container {
-  background-color: #fefefe;
   display: flex;
+  margin-top: -115px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .container-item-footer {
-  padding-top: 118px;
+}
+.footer-cotainer {
+  padding-top: 100px;
   box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
   background-image: url(../images/footer-img.jpg);
   background-position: center;
-  background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  width: 1280px;
-  height: 395px;
 }
 .item-discount {
-  margin-bottom: 100px;
-  margin-top: 50px;
 }
 
 .discount-info {
@@ -493,7 +499,7 @@ ul {
 .policy-container-list {
   display: flex;
   gap: 20px;
-  margin-top: 129px;
+  padding-bottom: 100px;
 }
 .next-menu {
   display: flex;
@@ -501,6 +507,7 @@ ul {
 .footer-item {
   display: flex;
   align-items: center;
+  margin-bottom: 129px;
 }
 .ligo-image {
   margin-right: 148px;
