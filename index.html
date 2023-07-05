@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kalam&family=Roboto+Mono:wght@600&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -44,7 +44,6 @@
           enjoy a hassle-free and delicious meal from the comfort of your own
           home.
         </p>
-        
         <button type="button" class="button-one">Order Now</button>
         </div>
         <div class="made-img">
@@ -62,10 +61,11 @@
 
       <section class="section-info">
         <div class="container subscribe-container ">
-        <img src="./images/apllenext.png" class="img-apple" alt="aple" width="396" height="502" />
+          <div class="about-our-list">
+        <img src="./images/apllenext.png" class="img-apple" alt="apple" width="396" height="502" />
+        <div class="container-about">
         <ul class="list content-text">
-<div class="about-our-list">
-          <li class="about-our list">
+          <li class="about-our">
           <h2 class="info-subscribe">What’s Special About Our Offerings</h2>
           <p class="text-info">
             With our platform, you can browse through a diverse selection of
@@ -73,16 +73,15 @@
             that cater to your specific taste buds.
           </p>
           </li>
-          </div>
-          <div class="text-delivery-order">
-          <li class="">
+          <div class="content-main">
+          <li class="about-our">
             <h3 class="info-delivery">Fasest Delivery</h3>
             <p class="text-delivery">
               Our advanced logistics system and dedicated delivery partners
               ensure that your meals are delivered to you within 30-minutes.
             </p>
           </li>
-          <li>
+          <li class="about-our">
             <h3 class="info-delivery">Easy To Order</h3>
             <p class="text-delivery">
               You can browse through a wide variety of cuisines and restaurants,
@@ -91,68 +90,84 @@
             </p>
           </li>
           </div>
-        </ul>
+</ul>
         <button type="button" class="button-info">Order Now</button>
         
         </div>
+        </div>
         </section>
         
-        
-        
-      
 
-      <section>
-        <div class="container">
+      <section class="">
+        <div class="favorites-container container">
         <h2 class="favorites-menu">Some of Our Favorites</h2>
         <p class="favorites-text">Looking for something delicious?</p>
         <ul class="list pizza-menu">
           <li class="li-pizza">
+            <div class="gamburger-circle">
             <img
-              src="./images/gamburger.png"
+              src="./images/gamburger.png" class="gamburger-photo" 
               alt="gamburger"
               width="315"
               height="315"
             />
-          </li>
-          <li>
+            <img src="./images/yellow-circle.png" alt=""  width="395" height="397" class="circle-yellow">
+            </div>
+          </li class="li-pizza">
+          <li class="li-pizza">
+            <div class="gamburger-circle">
             <img
-              src="./images/Pasta.png"
+              src="./images/Pasta.png" class="gamburger-photo" 
               alt="Pasta"
               width="315"
               height="315"
             />
+            <img src="./images/yellow-circle.png" alt=""  width="395" height="397" class="circle-yellow">
+            </div>
           </li>
-          <li>
+          <li class="li-pizza">
+            <div class="gamburger-circle">
             <img
-              src="./images/pizza.png"
+              src="./images/pizza.png" class="gamburger-photo" 
               alt="pizza"
               width="315"
               height="315"
             />
+            <img src="./images/yellow-circle.png" alt=""  width="395" height="397" class="circle-yellow">
+            </div>
           </li>
-          <li>
+          <li class="li-pizza">
+            <div class="gamburger-circle">
             <img
-              src="./images/chicken.png"
+              src="./images/chicken.png" class="gamburger-photo" 
               alt="chicken"
               width="315"
               height="315"
             />
+            <img src="./images/yellow-circle.png" alt=""  width="395" height="397" class="circle-yellow">
+            </div>
           </li>
-          <li>
+          <li class="li-pizza">
+            <div class="gamburger-circle">
             <img
-              src="./images/salat.png"
+              src="./images/salat.png" class="gamburger-photo" 
               alt="salat"
               width="315"
               height="315"
             />
+            <img src="./images/yellow-circle.png" alt=""  width="395" height="397" class="circle-yellow">
+            </div>
           </li>
-          <li>
+          <li class="li-pizza">
+            <div class="gamburger-circle">
             <img
-              src="./images/borshch.png"
+              src="./images/borshch.png" class="gamburger-photo" 
               alt="borshch"
               width="315"
               height="315"
             />
+            <img src="./images/yellow-circle.png" alt=""  width="395" height="397" class="circle-yellow">
+            </div>
           </li>
         </ul>
         </div>
@@ -160,8 +175,8 @@
 
 
       <section class="section-feedback">
-        <div class="container">
-        <div class="container-feedback">
+        <div class="container feedback-item">
+        <div class="container-feedback-main">
         <h2 class="item-feedback">What our Customers Say</h2>
         <p class="feedback-info">
           Don't just take our word for it - see what our satisfied customers
@@ -236,12 +251,15 @@
         </div>
       </section>
     </main>
-    <footer>
+
+    <footer class="footer-cotainer">
+      <div class="container container-item-footer">
+        <div class="footer-item">
       <a href="./index.html"
-        ><img src="./images/Vector.svg" alt="logo" width="66" height="52"
+        ><img src="./images/Vector.svg" alt="logo" class="ligo-image" width="66" height="52"
       /></a>
       <nav>
-        <ul class="list">
+        <ul class="list-footer-menu list">
           <li><a href="" class="footer-menu link">Home</a></li>
           <li><a href="" class="footer-menu link">About</a></li>
           <li><a href="" class="footer-menu link">Service</a></li>
@@ -249,21 +267,63 @@
           <li><a href="" class="footer-menu link">Contact</a></li>
         </ul>
       </nav>
-      <ul class="list">
-        <li><a href="" class="next-menu link">Privacy Policy</a></li>
-        <li><a href="" class="next-menu link">Terms of Service</a></li>
-        <li><a href="" class="next-menu link">Cookies Settings</a></li>
-      </ul>
+      <div class="footer-form">
       <p class="subscribe">Subscribe</p>
-      <form action="">
-        <input placeholder="Enter your email" type="text" class="your-email" /><button class="button-your-email"
+      <form class="form-container">
+        <label for="your-email" class=""></label>
+        <input placeholder="Enter your email" type="text" class="your-email" id="your-email" /><button class="button-your-email"
           type="submit"
         >
           Subscribe
         </button>
       </form>
       <p class="info-policy">By subscribing you agree to with our <a href="" class="link-policy">Privacy Policy</a></p>
-      <p class="info-policy">2022 FoodSta. All right reserved.</p>
+      </div>
+      </div>
+      
+      <div class="policy-container">
+      <ul class="list policy-container-list">
+        <li><a href="" class="next-menu link">Privacy Policy</a></li>
+        <li><a href="" class="next-menu link">Terms of Service</a></li>
+        <li><a href="" class="next-menu link">Cookies Settings</a></li>
+        <li class="policy-main"><p class="info-policy">2022 FoodSta. All right reserved.</p></li>
+      </ul>
+      
+      </div>
+      </div>
+
+      
+      <!-- <div class="image-container">
+        <ul class="image-list">
+          <li class="image-item-list">
+            <img src="./images/orange-left.png" alt="orange-left" width="196" height="107">
+          </li>
+          <li class="image-item-list">
+            <img src="./images/drops-left.png" alt="drops-left" width="178" height="98">
+          </li>
+          <li class="image-item-list">
+            <img src="./images/apple-left.png" alt="apple-left" width="163" height="206">
+          </li>
+          <div class="drops-orange">
+          <li class="image-item-list">
+            <img src="./images/drops-centr.png" alt="drops-centr" class="drops-center" width="526" height="266">
+          </li>
+          <li class="image-item-list">
+            <img src="./images/orange-centr.png" alt="orange-centr" class="orange-center" width="380" height="126">
+          </li>
+          </div>
+          <li class="image-item-list">
+            <img src="./images/banana.png" alt="banana" width="87" height="235">
+          </li>
+          <li class="image-item-list">
+            <img src="./images/drops-rights.png" alt="drops-rights" width="162" height="154">
+          </li>
+          <li class="image-item-list">
+            <img src="./images/apple-rights.png" alt="apple-rights" width="73" height="181">
+          </li>
+        </ul>
+      </div> -->
+      </div>
     </footer>
   </body>
 </html>
