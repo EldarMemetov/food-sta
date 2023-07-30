@@ -487,6 +487,7 @@
                 id="user-name"
                 class="madal-input"
                 placeholder="Your name"
+                pattern="^[A-Za-z ]+$"
               />
             </div>
           </div>
@@ -499,6 +500,7 @@
                 id="user-tel"
                 class="madal-input"
                 placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                pattern="\b(?:\+38|38)?\s?(?:\d{2}|\(\d{2}\))\s?\d{2}\s?\d{3}\s?\d{4}\b"
               />
               
             </div>
@@ -512,6 +514,7 @@
                 id="user-email"
                 class="madal-input"
                 placeholder="example@gmail.com"
+                pattern="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b"
               />
               
             </div>
