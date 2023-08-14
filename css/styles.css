@@ -66,8 +66,6 @@ ul {
   display: block;
 }
 
-.main-menu-mob {
-}
 .item-menu-mob {
   color: #000;
   font-size: 16px;
@@ -107,11 +105,11 @@ ul {
 
 .link-mob-menu:hover,
 .link-mob-menu:focus {
-  background: var(--button-green, #bbf330);
+  background: #bbf330;
 }
 
 .close-modal {
-  background-color: transparent;
+  /* background-color: transparent;
   border: none;
   box-shadow: none;
   position: absolute;
@@ -121,8 +119,25 @@ ul {
   justify-content: center;
   align-items: center;
   padding: 0;
-  transition: background-color var(--hover), border var(--hover);
+  transition: background-color var(--hover), border var(--hover); */
+  margin-left: auto;
+  background-color: transparent;
+  margin-bottom: 32px;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  top: 5px;
+  right: 11px;
+  position: absolute;
+  padding: 0px;
 }
+
 .link-mob-menu {
   text-align: left;
 }
@@ -422,7 +437,7 @@ ul {
   padding-top: 100px;
   padding-bottom: 200px;
 }
-.img-banan-tablet{
+.img-banan-tablet {
   display: none;
 }
 .item-feedback {
