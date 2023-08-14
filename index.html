@@ -170,7 +170,7 @@
               height="268"
             />
             </div>
-          </li class="li-pizza">
+          </li>
           <li class="li-pizza">
             <div class="gamburger-circle">
             <img
@@ -386,7 +386,7 @@
               height="48"
             />
             <div class="text-cool">
-            <h3 class="feedback-people"">Sumith Shah</h3>
+            <h3 class="feedback-people">Sumith Shah</h3>
             <p class="people-info">Some Dude</p>
             </div>
             </div>
@@ -399,14 +399,14 @@
       <section class="spesial-section">
         <div class="container spesial-container">
           <div class="item-discount">
-            <img src="./images/banan-mob.png" alt="banan-mob"width="280" height="78" class="img-banan-mob">
-            <img src="./images/banan-tablet.png" alt="banan-tablet"width="281" height="136" class="img-banan-tablet">
+            <img src="./images/banan-mob.png" alt="banan-mob" width="280" height="78" class="img-banan-mob">
+            <img src="./images/banan-tablet.png" alt="banan-tablet" width="281" height="136" class="img-banan-tablet">
         <h2 class="discount-info">Subscribe To Get Special Offers</h2>
         <p class="discount-text">
           Order now and receive 10% off your first meal with Enjoy Your Favorite
           Food From Anywhere.
         </p>
-        <form action="" class="form-section">
+        <form class="form-section">
           <input class="item-email" placeholder="Enter your email" type="text" /><button class="button-form"
             type="submit"
           >
@@ -458,7 +458,6 @@
       </ul>
       
       </div>
-      </div>
 
       </div>
     </footer>
@@ -487,6 +486,7 @@
                 id="user-name"
                 class="madal-input"
                 placeholder="Your name"
+                pattern="^[A-Za-z ]+$"
               />
             </div>
           </div>
@@ -499,6 +499,7 @@
                 id="user-tel"
                 class="madal-input"
                 placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                pattern="\b(?:\+38|38)?\s?(?:\d{2}|\(\d{2}\))\s?\d{2}\s?\d{3}\s?\d{4}\b"
               />
               
             </div>
@@ -512,6 +513,7 @@
                 id="user-email"
                 class="madal-input"
                 placeholder="example@gmail.com"
+                pattern="\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b"
               />
               
             </div>
